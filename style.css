@@ -1,0 +1,680 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: gilroy;
+
+}
+
+#main {
+    padding: 0.1px;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+
+}
+
+#nav {
+    width: 100%;
+    height: 8vh;
+    padding: 5px;
+    margin-top: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#nav h3 {
+    display: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+img {
+    width: 50px;
+    height: 80px;
+}
+
+#nav h1 {
+    font-family: monument;
+    font-size: 70px;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav h1::after {
+    content: "©";
+    font-size: 30px;
+    padding-bottom: 55px;
+
+}
+
+
+#nav h2 {
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+#nav h2:nth-last-child(1) {
+    width: 60%;
+
+}
+
+#center {
+
+    height: 90%;
+    width: 100%;
+    position: relative;
+    padding: 4vw;
+}
+
+#content {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+
+    bottom: 0;
+    color: #fff;
+}
+
+#videoText1 h1 {
+    font-size: 4vw;
+
+    font-family: monument;
+}
+
+#videoText1 h2 {
+    font-size: 3vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 2vw 2.5vw;
+}
+
+#videoText1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+
+    border-bottom: 1px solid white;
+}
+
+#videoText2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+    height: 7%;
+
+
+    bottom: 0;
+
+}
+
+#videoText2 h2 {
+    font-size: 1.3vw;
+}
+
+#scroll {
+    width: 100%;
+    height: 30vh;
+
+    /*  white space no wrap wrap kr deta h ek line m
+    x m auto h mtlb x trf jaise rotate hota h waise hoga
+    y m hidden h to upar niche kk item scroll nhi hoga */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scroll img {
+    width: 16%;
+    height: 90%;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#container {
+    animation-name: anime;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#alphabets {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+
+}
+
+#alphabets h4 {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 400;
+    text-decoration: underline;
+
+
+}
+
+#alphabets h6 {
+    font-size: 30px;
+    font-style: italic;
+
+
+
+}
+
+#alphabets h6:hover {
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 1vw 1vh;
+    cursor: pointer;
+}
+
+@keyframes anime {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+#page2 {
+    width: 100%;
+    height: 90vh;
+}
+
+#page2Part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#page2Part1 img {
+    padding: 3vw;
+    width: 60%;
+    height: 90%;
+}
+
+#secondImg {
+    width: 80%;
+    height: 70vh;
+}
+
+#secondImg h3 {
+    font-size: 40px;
+    padding: 4vw 4vh;
+}
+
+#page3 {
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 3vh;
+    /* background-color: red;*/
+    position: relative;
+}
+
+#page3>h1 {
+    font-family: monument;
+    text-align: center;
+    text-transform: uppercase;
+
+
+}
+
+#innerUpdates {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 3vw;
+    display: flex;
+    flex-direction: row;
+    height: 13vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#innerUpdates h3 {
+    font-size: 1vw;
+}
+
+#innerUpdates img {
+    width: 7vw;
+    height: 10vh;
+    border-radius: 50%;
+
+}
+
+#innerUpdates img:hover {
+    animation-name: imageAnime;
+    animation-duration: 3s;
+
+
+}
+
+@keyframes imageAnime {
+    from {
+        transform: translate(-10%);
+    }
+
+    to {
+        transform: translate(100%);
+    }
+}
+
+
+#innerUpdatesText {
+    margin-right: 25vw;
+
+}
+
+#innerUpdatesText h2 {
+    font-size: 2vw;
+}
+
+#innerUpdatesText h5 {
+    font-size: 1vw;
+}
+
+#marque {
+    width: 100%;
+    /*  height: 20vh;*/
+
+    padding: 0.2vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#marque h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    letter-spacing: 2px;
+    animation-name: marqueAnime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes marqueAnime {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+
+}
+
+#footer {
+    width: 100%;
+    height: 60vh;
+
+}
+
+
+
+@media (max-width:600px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #nav {
+        height: 4vh;
+        padding: 0.5vw;
+        margin-top: 20px;
+    }
+
+
+    #nav h3 {
+        display: block;
+
+    }
+
+
+    h2 {
+        font-size: 30px;
+    }
+
+    img {
+        width: 50px;
+        height: 80px;
+    }
+
+    #nav h1 {
+
+        font-size: 25px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #nav h1::after {
+        content: "©";
+        font-size: 15px;
+        padding-bottom: 25px;
+
+    }
+
+
+    #nav h2 {
+        display: none;
+        margin: 10px;
+        width: 100%;
+        height: 100%;
+
+        justify-content: center;
+        align-items: center;
+        border-right: 2px solid black;
+    }
+
+    #nav h2:nth-last-child(1) {
+        display: none;
+        width: 60%;
+
+    }
+
+    #center {
+
+        height: 50%;
+        width: 100%;
+        position: relative;
+        padding: 4vw;
+    }
+
+    #content {
+
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #overlay {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+
+        bottom: 0;
+        color: #fff;
+    }
+
+    #videoText1 h1 {
+        font-size: 5vw;
+
+        font-family: monument;
+        font-weight: 100;
+    }
+
+    #videoText1 h2 {
+        font-size: 3vw;
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 2vw 2.5vw;
+    }
+
+    #videoText1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw;
+
+        border-bottom: 1px solid white;
+    }
+
+    #videoText2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5vw;
+        height: 5%;
+
+
+        bottom: 0;
+
+    }
+
+    #videoText2 h2 {
+        font-size: 4.5vw;
+    }
+
+    #scroll {
+        width: 100%;
+        height: 10vh;
+
+        /*  white space no wrap wrap kr deta h ek line m
+        x m auto h mtlb x trf jaise rotate hota h waise hoga
+        y m hidden h to upar niche kk item scroll nhi hoga */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #scroll img {
+        width: 16%;
+        height: 90%;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    #container {
+        animation-name: anime;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #alphabets {
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+
+
+    }
+
+    #alphabets h4 {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 400;
+        text-decoration: underline;
+
+
+    }
+
+    #alphabets h6 {
+        font-size: 15px;
+        font-style: italic;
+
+
+
+    }
+
+    #alphabets h6:hover {
+        border-radius: 50%;
+        border: 2px solid black;
+        padding: 1vw 1vh;
+        cursor: pointer;
+    }
+
+
+    #page2 {
+
+        width: 100%;
+        height: 90vh;
+    }
+
+    #page2Part1 {
+        display: flex;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #page2Part1 img {
+        padding: 5vw;
+        width: 100%;
+        height: 100%;
+    }
+
+    #secondImg {
+        display: none;
+        width: 80vw;
+        height: 70vh;
+    }
+
+    #secondImg h3 {
+        display: none;
+        font-size: 40px;
+        padding: 4vw 4vh;
+    }
+
+    #page3 {
+
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 2vh;
+        /* background-color: red;*/
+        position: relative;
+    }
+
+    #page3>h1 {
+        font-family: monument;
+        font-size: 5vw;
+        text-align: center;
+        text-transform: uppercase;
+
+
+    }
+
+    #innerUpdates {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 3vw;
+        display: flex;
+        flex-direction: row;
+        height: 12vh;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #innerUpdates h3 {
+        font-size: 2vw;
+    }
+
+    #innerUpdates img {
+        width: 15vw;
+        height: 7vh;
+        border-radius: 50%;
+
+    }
+
+    #innerUpdatesText {
+        margin-right: 25vw;
+
+    }
+
+    #innerUpdatesText h2 {
+        font-size: 3vw;
+    }
+
+
+
+    #innerUpdatesText h5 {
+        font-size: 1vw;
+    }
+
+
+}
